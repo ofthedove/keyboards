@@ -11,8 +11,8 @@ I figured this out by asking in the discord, and someone there pointed me to the
 Oh, also, I picked the "Hold On Other Key Press" option rather than the "Permissive" option. I might want to switch to permissive later to make it easier to hit space without capitalizing by mistake.
 
 Docs:
-Mod Tap Tap on Hold: https://docs.qmk.fm/#/tap_hold?id=tap-or-hold-decision-modes
-info.json: https://docs.qmk.fm/#/reference_info_json?id=firmware-configuration
+- Mod Tap Tap on Hold: https://docs.qmk.fm/#/tap_hold?id=tap-or-hold-decision-modes
+- info.json: https://docs.qmk.fm/#/reference_info_json?id=firmware-configuration
 
 ### Feb 25th 2024
 
