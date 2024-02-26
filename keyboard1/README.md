@@ -2,6 +2,18 @@
 
 ## Build Log
 
+### Feb 26th 2024
+
+I started using the keyboard and realized that I can't capitalize Is anymore. Turns out, in the version of QMK I pulled a year ago the Mod Tap feature I use for space/shift and backspace/shift defaulted to a letter tap switching the key to it's hold behavior. That default got removed in the new version of QMK I just pulled in, which meant that the mod tap keys had to be held for the full time to access the hold behavior. Totally threw off my typing flow.
+
+I figured this out by asking in the discord, and someone there pointed me to the documentation. Of course this documentation also assumed you were using the c and h files for config, not the info.json, but the info.json does have the right fields for it, and changing them worked. I made the change in the codespace, which is really nice to be able to tweak and download from anywhere. I had forgotten to consider that the codespace has it's own cache of the repo, so I got those back in sync, and also used it to create an `old-master` branch. I did that because I realized when I rebased `myStuff` all the commits were re-created, so the origianl commit dates were lost, and those will be useful in the future if I ever get around to back-filling this build log.
+
+Oh, also, I picked the "Hold On Other Key Press" option rather than the "Permissive" option. I might want to switch to permissive later to make it easier to hit space without capitalizing by mistake.
+
+Docs:
+Mod Tap Tap on Hold: https://docs.qmk.fm/#/tap_hold?id=tap-or-hold-decision-modes
+info.json: https://docs.qmk.fm/#/reference_info_json?id=firmware-configuration
+
 ### Feb 25th 2024
 
 I needed to fix the matrix pin config issue before tomorrow, so I can have a working keyboard for work.
