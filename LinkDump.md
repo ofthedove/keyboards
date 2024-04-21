@@ -2,6 +2,14 @@
 
 A place to dump links so I can finally close these tabs.
 
+## Guides
+
+These guides were, iirc, some of my original inspiration and information for making a dactyl manuform. I didn't follow either exactly but they're both useful:
+
+https://github.com/adereth/dactyl-keyboard/blob/master/guide/README.org
+
+https://medium.com/swlh/complete-idiot-guide-for-building-a-dactyl-manuform-keyboard-53454845b065
+
 ## PCB Design
 
 Idk it was open in the browser
