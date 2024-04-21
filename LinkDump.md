@@ -13,3 +13,11 @@ Using PIO for split keyboard comms over USB, pretty neat:
 https://github.com/sekigon-gonnoc/Pico-PIO-USB
 https://github.com/sekigon-gonnoc/qmk_firmware/blob/rp2040/keyboards/pico_pico_usb/pico_pio_usb/pio_usb.c
 https://www.reddit.com/r/ErgoMechKeyboards/comments/sthpeh/you_can_now_use_rp2040_for_connecting_split_kb/
+
+## QMK Split
+
+Generic split keyboard info, assumes using .h file for config:
+https://github.com/qmk/qmk_firmware/blob/master/docs/feature_split_keyboard.md
+
+Reference for info.json, can usually figure out how to map config .h to info.json in here:
+https://github.com/qmk/qmk_firmware/blob/master/docs/reference_info_json.md
