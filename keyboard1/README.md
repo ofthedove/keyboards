@@ -2,6 +2,67 @@
 
 ## Build Log
 
+### Apr 30th 2024
+
+Not actually changing anything right now, but I need to soon. Just grabbing some notes and links.
+
+I need to switch to the true RJ11 connectors. They came in not long after I soldered the ones I have now, which I think are RJ12? They're slightly too wide. Still only 4 pin but the RJ11 cable has pieces of paper shoved in beside it to staqy aligned. Also, they don't fit down inside the case right so I had hot glued them to the outside and they have now come loose. I need to replace them before my backpack completely removes them for me.
+
+I also really want to figure out the issue where I have to unplug and replug from the dock every time the computer is removed. It's really annoying. I found these posts online and thought I understood the issue, but the people on Discord said that I'm totally confused. so idk. I haven't yet had time to actually try any solutions.
+
+Links:
+https://github.com/qmk/qmk_firmware/issues/22477
+https://github.com/qmk/qmk_firmware/issues/22778
+
+Discord convo, copy paste not picture b/c pictures are annoying in markdown:
+
+```
+ofthedove — 04/23/2024 3:03 PM
+Hi, I'm looking for help with a custom split keyboard I made.
+
+The keyboard is usually plugged in through a powered USB hub, so the keyboard remains powered even when the computer isn't connected. This is a problem because when the computer plugs in to the hub, the keyboard doesn't connect to it. They keyboard has to be un-plugged and re-plugged to work.
+
+I've done some searching and understand this is a common problem on split keyboards, as most split keyboards use USB detection to determine handedness. I tried to fix this by adding a handedness pin to my keyboard and firmware and explicitly set left as main, so that both halves should know at boot which side they are and whether they own the USB connection. However, the problem persists.
+
+Is there a setting that will allow the keyboard to reconnect if the USB connection is lost, without power cycling? I think I saw something about a USB watchdog that would fully reset the board if it lost power, but that doesn't seem ideal or necessary to me. Aren't there other options?
+
+Edit: Here's my info.json on GitHub for reference: info.json
+
+Dasky — 04/23/2024 3:16 PM
+Handedness has nothing to do with how the usb connection state is decided.
+Which rp2040 based controller are you using?
+
+ofthedove — 04/23/2024 4:36 PM
+Interesting. That's the reason I've seen stated for why this is an issue for splits, that when the USB doesn't initialize both sides assume they're the secondary device. 
+
+I'm using the Pi Pico.
+
+Dasky — 04/23/2024 4:39 PM
+when the USB doesn't initialize both sides assume they're the secondary device.
+this part is correct but it has nothing to do with handedness
+which pin are you using for power between the halves?
+VSYS, VBUS, 3V3?
+if you're using VSYS or 3V3 you should be able to enable VBUS detection
+
+ofthedove — 04/23/2024 4:45 PM
+VSYS
+
+Will that make a difference? Since the hub powers the bus even when there's no host to talk to?
+
+sigprof — 04/23/2024 4:45 PM
+but only if you are using either the original Pi Pico, or some really good clone
+with the original Pi Pico #define USB_VBUS_PIN GP24 should work
+
+Dasky — 04/23/2024 4:46 PM
+#define USB_VBUS_PIN GP24
+
+sigprof — 04/23/2024 4:46 PM
+but if you are using some lookalike with the Type C connector… there are lots of not-quite-compatible clones
+and some of those clones don't have the VBUS detection circuit, or have other changes in the power circuits
+```
+
+Also, just throwing this in there, I want to add a compose key to the layout somewhere. That's the key that lets you put accents on words. On my laptop keyboard it's right alt but I don't have that anywhere on this keyboard.
+
 ### Feb 26th 2024
 
 I started using the keyboard and realized that I can't capitalize Is anymore. Turns out, in the version of QMK I pulled a year ago the Mod Tap feature I use for space/shift and backspace/shift defaulted to a letter tap switching the key to it's hold behavior. That default got removed in the new version of QMK I just pulled in, which meant that the mod tap keys had to be held for the full time to access the hold behavior. Totally threw off my typing flow.

@@ -11,3 +11,14 @@ The first keyboard I made is a 4x5 Dactyl Manuform. I 3D printed the case using 
 ## Keyboard 2
 
 My second keyboard is an Ergo DOX layout with a modified case design. I did the CAD for these myself, but got the key layout from an online generator using the standard ErgoDox layout. The case is a combination of laser cut 1/8th inch acrylic and 3D printed parts. I'm once again using Pi Picos for controllers.
+
+## Cidoo Nebula
+
+Haven't written a lot about this yet, but wanted to get something down.
+Bought a barebones kit from BidFTA for like $4
+Put on Kailh box white switches I had from Micro Center clearnance. Then were less than $20 and I didn't use nearly all of them.
+Then a stole key caps from my Inland keyboard that had started wearing out. They don't fit well but they do work.
+
+I love it. I love clicky switches. The 65% layout is slightly constricting, but it has VIA! So I can change stuff easily. And it's bluetooth. It's fantastic.
+
+Now Thia wants one, but one of the assembled ones. It has koalas on the keycaps!
