@@ -19,3 +19,5 @@ There's also a 'cidoo_nebula.layout.json' in this folder, it's a backup of the l
 > - reload page and re-connect to keyboard, should work now.
 > Thanks to [this reddit comment](https://www.reddit.com/r/Keychron/comments/13nmnph/comment/kaas0rg/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) for the solution!
 > (One other thing, mentioned in that comment, if you're running chrome from a Snap there are extra steps b/c it's sandboxed. But I run the native app so I didn't need that.)
+
+Oh hey, look what I found, this is handy: https://epomaker.com/blogs/guides/via-usage-guide?srsltid=AfmBOoqOMwWd4I6zDFbAzZ8_YdbMWc0Tegdv4GmToalhnXfXufaM-4u-
