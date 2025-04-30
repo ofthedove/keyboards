@@ -1,12 +1,12 @@
 There are extra steps to programming the CIDOO Nebula with VIA!!!
 
-Go to https://usevia.app/
-Go to "Settings"
-Toggle "Show Design Tab" and accept warning
-Go to "Design"
-Toggle "Use V2 definitions (deprecated)"
-Upload the CIDOO_Nebula_USB json file (in this directory)
-Switch to the "Configure" tab
+- Go to https://usevia.app/
+- Go to "Settings"
+- Toggle "Show Design Tab" and accept warning
+- Go to "Design"
+- Toggle "Use V2 definitions (deprecated)"
+- Upload the CIDOO_Nebula_USB json file (in this directory)
+- Switch to the "Configure" tab
 
 Now you can edit to your heart's content!
 
